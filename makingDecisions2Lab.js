@@ -220,3 +220,17 @@ for (let i = 0; i < 50; i++) {
       console.log(logString)
   }
 }
+
+let arrSource = [6,8,2,4,9]
+
+let arrResult = arrSource.map((num, index) => {
+    if (index < arrSource.length - 1) {
+      return num * arrSource[index + 1]
+    } else {
+      return num * 1
+    }
+  }
+)
+
+console.log(arrSource)
+console.log(arrResult)
